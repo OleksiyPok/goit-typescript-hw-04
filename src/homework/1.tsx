@@ -9,7 +9,7 @@ export function Observer({ children, onContentEndVisible }: Props) {
   const endContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const options = {
+    const options: IntersectionObserverInit = {
       rootMargin: "0px",
       threshold: 1.0,
       root: null,
